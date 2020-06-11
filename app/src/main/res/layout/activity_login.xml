@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -128,7 +131,10 @@
                        android:inputType="textPassword"
                        android:fontFamily="@font/roboto_medium"
                        android:textColor="@color/colorBlack"
-                       android:textSize="16sp" />
+                       android:textSize="16sp" >
+
+
+                   </com.google.android.material.textfield.TextInputEditText>
 
                </com.google.android.material.textfield.TextInputLayout>
 
@@ -167,21 +173,27 @@
 
     </com.google.android.material.card.MaterialCardView>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_Btn"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
     <TextView
         android:id="@+id/dontHaveAccount_txt"
-        android:layout_below="@id/login_Btn"
         android:layout_width="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
         android:text="Don’t have an account?"
         android:textSize="18sp" />
 
     <TextView
-        android:layout_below="@id/dontHaveAccount_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:textColor="@color/colorPrimary"
         android:text="Create a new account"
         android:textSize="16sp" />
+    </LinearLayout>
 </RelativeLayout>
+</ScrollView>

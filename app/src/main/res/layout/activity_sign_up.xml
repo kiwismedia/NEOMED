@@ -90,6 +90,7 @@
                         app:startIconDrawable="@drawable/mail">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/emailAddress"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -124,6 +125,7 @@
                         app:startIconDrawable="@drawable/profile">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/userFullName"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -171,6 +173,7 @@
                         app:startIconDrawable="@drawable/password">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/password"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -218,6 +221,7 @@
                         app:startIconDrawable="@drawable/password">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/confirmPassword"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -226,7 +230,6 @@
                             android:fontFamily="@font/roboto_medium"
                             android:textColor="@color/colorBlack"
                             android:textSize="16sp" >
-
 
                         </com.google.android.material.textfield.TextInputEditText>
                         <!-- <TextView

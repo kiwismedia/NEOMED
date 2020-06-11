@@ -143,8 +143,10 @@
         android:layout_width="match_parent"
         android:layout_below="@id/login_card"
         app:cardBackgroundColor="@color/colorPrimary"
-        app:cardCornerRadius="22sp"
+        app:cardCornerRadius="25sp"
         app:contentPadding="10dp"
+        android:clickable="true"
+        android:focusable="true"
         android:layout_margin="24dp">
 
         <TextView

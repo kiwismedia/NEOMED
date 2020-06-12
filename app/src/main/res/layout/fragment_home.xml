@@ -9,7 +9,7 @@
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="130dp"
+            android:layout_height="150dp"
             android:padding="16dp"
             android:background="@color/colorPrimary">
 
@@ -22,7 +22,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:weightSum="2">
+                android:weightSum="2"
+                android:layout_marginBottom="12dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -59,14 +60,14 @@
                    android:layout_weight="0.1">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
                     android:layout_marginEnd="16dp"
                     android:src="@drawable/notifications"/>
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
                     android:src="@drawable/cart" />
             </LinearLayout>
             </LinearLayout>

@@ -10,24 +10,29 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="130dp"
+            android:padding="16dp"
             android:background="@color/colorPrimary">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_gravity="center">
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
 
                 <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.8">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
                     android:src="@drawable/logo_white"/>
 
                 <TextView
@@ -37,7 +42,7 @@
                     android:fontFamily="@font/roboto_medium"
                     android:text="NEO "
                     android:textColor="@color/colorWhite"
-                    android:textSize="24sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -45,13 +50,13 @@
                     android:fontFamily="@font/roboto_black"
                     android:text="MED"
                     android:textColor="@color/colorWhite"
-                    android:textSize="24sp" />
+                    android:textSize="20sp" />
             </LinearLayout>
 
                 <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="150dp">
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:layout_weight="0.1">
 
                 <ImageView
                     android:layout_width="30dp"
@@ -61,7 +66,7 @@
 
                 <ImageView
                     android:layout_width="30dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="30dp"
                     android:src="@drawable/cart" />
             </LinearLayout>
             </LinearLayout>
@@ -72,8 +77,9 @@
                 android:layout_width="match_parent"
                 app:cardBackgroundColor="@color/colorWhite"
                 app:cardCornerRadius="25sp"
-                app:contentPadding="10dp"
-                android:layout_margin="12dp"
+                app:contentPadding="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
                 android:clickable="true"
                 android:focusable="true">
 

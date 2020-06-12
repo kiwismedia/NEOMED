@@ -1,8 +1,12 @@
 package com.kiwismedia.neomed;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.kiwismedia.neomed.ui.dashboard.MyOrderFragment;
+import com.kiwismedia.neomed.ui.notifications.NotificationsFragment;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -27,4 +31,15 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navView, navController);
     }
 
+    public void GotoNotification(View view) {
+        Intent iNotification = new Intent(MainActivity.this, NotificationsFragment.class);
+        startActivity(iNotification);
+        finish();
+    }
+
+    public void GotoCart(View view) {
+        Intent iNotification = new Intent(MainActivity.this, MyOrderFragment.class);
+        startActivity(iNotification);
+        finish();
+    }
 }
